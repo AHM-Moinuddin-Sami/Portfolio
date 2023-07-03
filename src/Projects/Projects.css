@@ -1,0 +1,18 @@
+.project>.bar {
+    margin-top: -55px;
+    transition: all 1s ease;
+}
+
+.project:hover>.bar {
+    margin-top: 0px;
+}
+
+.bar>* {
+    transition: all .5s ease;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.bar>*:hover {
+    border-bottom: 1px solid white;
+}
