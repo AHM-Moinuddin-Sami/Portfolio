@@ -5,7 +5,7 @@ const Header = () => {
     
 
     return (
-        <div id="home" className={`flex flex-col justify-center items-center h-[100vh]`}>
+        <div className={`flex flex-col -pt-8 justify-center items-center h-[100vh]`}>
             <p>Hello!</p>
             <p>I am A.H.M. Moin Uddin Sami</p>
             <TypeAnimation

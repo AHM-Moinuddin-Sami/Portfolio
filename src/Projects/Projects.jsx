@@ -3,7 +3,7 @@ import "./Projects.css";
 
 const Projects = () => {
     return (
-        <div>
+        <div id="projects">
             <SectionTitle title={"My Projects"}></SectionTitle>
             <div className="grid grid-cols-1 gap-10 md:grid-cols-2 w-10/12 mx-auto justify-between">
                 <div className="project overflow-hidden mb-10 h-[300px] bg-[#000] ease-in-out duration-[5s] bg-cover bg-top hover:bg-bottom " style={{ backgroundImage: `url("/wayofthedragon.png")` }}>
