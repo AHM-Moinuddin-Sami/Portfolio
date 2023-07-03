@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header {
+    min-height: 100%;
+    background: linear-gradient(0deg, #0088ff4d, #00ffd04d), url('/header.jpg');
+    background-size: cover;
+}
