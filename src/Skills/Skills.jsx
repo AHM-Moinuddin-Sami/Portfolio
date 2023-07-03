@@ -126,21 +126,21 @@ const Skills = () => {
     ]
 
     return (
-        <div id="skills">
+        <div id="skills" className="bg-gray-600 py-10">
             <SectionTitle title={"My Skills"}></SectionTitle>
 
             <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-2">
                 {
                     skills.map((skill, i) =>
-                        <div key={i} ref={ref} className="flex w-full items-center justify-center gap-2">
+                        <div key={i} ref={ref} className="flex w-full items-center justify-center gap-2 hover:scale-125 transition-all duration-200 hover:z-20">
                             <img className="h-auto w-32" src={skill.icon} alt="" />
                             <div className="grow">
-                                <p className="text-">{skill.name}</p>
+                                <p className="text-xl text-transparent bg-clip-text bg-gradient-to-b from-[#0088ffc6] to-[#00ffd0]">{skill.name}</p>
                                 <InView className="">
                                     {({ inView, ref }) => {
                                         const percentage = inView ? skill.completion : 0;
                                         return <div ref={ref}>
-                                            <ProgressBar completed={percentage} customLabel={`${percentage}%`} bgColor={`#FFD700`}></ProgressBar>
+                                            <ProgressBar completed={percentage} customLabel={`${percentage}%`} bgColor={`#00ffd0`}></ProgressBar>
                                         </div>
                                     }}
                                 </InView>
@@ -150,7 +150,7 @@ const Skills = () => {
                 }
             </div>
             <div className="my-5">
-                <p className=" text-center text-xl my-5">Tools Used</p>
+                <p className=" text-center text-2xl text-transparent bg-clip-text bg-gradient-to-t from-[#0088ffc6] to-[#00ffd0] my-5">Tools Used</p>
                 <Marquee
                     autoFill
                 >
