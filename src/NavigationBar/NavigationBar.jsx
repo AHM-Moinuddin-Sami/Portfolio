@@ -32,6 +32,7 @@ const NavigationBar = () => {
             <Link to="contact" className="cursor-pointer md:block hidden  no-underline border-b-[1px] border-transparent hover:border-white transition-all ease-in-out duration-200" smooth={true} offset={-100} duration={500}>Contact Me</Link>
             <a href="/Resume.pdf" className="border md:block hidden  rounded-full hover:bg-gradient-to-br from-[#0088ffc6] to-[#00ffd0] px-5 py-2 hover:text-black transition-all duration-200 ease-in-out" download>Download Resume</a>
             <button className="md:hidden block"></button>
+            <button></button>
         </div>
     );
 };

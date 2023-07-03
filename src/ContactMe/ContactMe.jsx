@@ -8,7 +8,7 @@ const ContactMe = () => {
     const onSubmit = data => {
         reset();
         const formData = { name: data.name, email: data.email, message: data.message, phone: data.phoneNumber }
-        fetch('https://way-of-the-dragon-server.vercel.app/users', {
+        fetch('https://portfolio-server-five-jet.vercel.app/contacts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

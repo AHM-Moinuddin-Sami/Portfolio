@@ -4,8 +4,8 @@ const AboutMe = () => {
     return (
         <div id="about" className="bg-gray-800 py-10">
             <SectionTitle title={"About Me"}></SectionTitle>
-            <div className="flex gap-5 justify-center items-center">
-                <div className="flex flex-col justify-center items-center gap-2">
+            <div className="grid grid-cols-1 md:flex gap-5 justify-center items-center">
+                <div className="flex flex-col justify-center items-center gap-5">
                     <img src="/SamiCropped.png" className="h-48 w-36 rounded-full" />
                     <div className="flex gap-1">
                         <a href="https://github.com/AHM-Moinuddin-Sami"><img className="h-12 w-12" src="/github.png" alt="" /></a>
@@ -13,7 +13,7 @@ const AboutMe = () => {
                         <a href="https://www.facebook.com/moinuddin.sami.12/"><img className="h-12 w-12" src="/facebook.png" alt="" /></a>
                     </div>
                 </div>
-                <div className="text-white text-lg">
+                <div className="text-white text-lg text-center md:text-start">
                     <p>Name: A.H.M. Moin Uddin Sami</p>
                     <p>Email: moinuddinsami1205@gmail.com</p>
                     <p>Date of Birth: 12th May, 2003</p>
