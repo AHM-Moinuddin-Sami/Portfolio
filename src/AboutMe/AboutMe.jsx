@@ -1,10 +1,21 @@
+import { useEffect } from "react";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Education from "../Education/Education";
 
 const AboutMe = () => {
+
+    useEffect(() => {
+        AOS.init({
+            // Customize AOS options here (optional)
+        });
+    }, [])
+
     return (
         <div id="about" className="bg-gray-800 py-10">
             <SectionTitle title={"About Me"}></SectionTitle>
-            <div className="grid grid-cols-1 md:flex gap-5 justify-center items-center">
+            <div data-aos="zoom-in" className="grid grid-cols-1 md:flex gap-5 justify-center items-center">
                 <div className="flex flex-col justify-center items-center gap-5">
                     <img src="/SamiCropped.png" className="h-48 w-36 rounded-full" />
                     <div className="flex gap-1">
@@ -23,6 +34,7 @@ const AboutMe = () => {
                     <a href="/Resume.pdf" className="border w-fit mt-5 md:block hidden  rounded-full bg-gradient-to-tl hover:bg-gradient-to-br from-[#0088ffc6] to-[#00ffd0] px-5 py-2 hover:text-black transition-all duration-200 ease-in-out" download>Download Resume</a>
                 </div>
             </div>
+            <Education></Education>
         </div>
     );
 };

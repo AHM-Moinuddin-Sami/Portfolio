@@ -2,10 +2,20 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import { InView, useInView } from "react-intersection-observer";
 import Marquee from "react-fast-marquee";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 const Skills = () => {
     const { ref, inView, entry } = useInView({ threshold: 0 });
+
+    useEffect(() => {
+        AOS.init({
+            // Customize AOS options here (optional)
+        });
+    }, [])
+    
 
     const skills = [
         {
@@ -132,7 +142,7 @@ const Skills = () => {
             <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-2">
                 {
                     skills.map((skill, i) =>
-                        <div key={i} ref={ref} className="flex w-full items-center justify-center gap-2 hover:scale-125 transition-all duration-200 hover:z-20">
+                        <div data-aos="fade-up" key={i} ref={ref} className="flex w-full items-center justify-center gap-2 hover:scale-125 transition-all duration-200 hover:z-20">
                             <img className="h-auto w-32" src={skill.icon} alt="" />
                             <div className="grow">
                                 <p className="text-xl text-transparent bg-clip-text bg-gradient-to-b from-[#0088ffc6] to-[#00ffd0]">{skill.name}</p>
