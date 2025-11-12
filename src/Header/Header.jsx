@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import SmoothAnchor from "../components/SmoothAnchor";
+import SmoothAnchor from "../Components/SmoothAnchor";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
