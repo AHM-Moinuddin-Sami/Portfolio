@@ -7,3 +7,15 @@
     background: linear-gradient(0deg, #0088ff4d, #00ffd04d), url('/header.jpg');
     background-size: cover;
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    /* adjust to your header height */
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
