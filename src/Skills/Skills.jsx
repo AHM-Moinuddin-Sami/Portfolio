@@ -14,8 +14,9 @@ const Skills = () => {
     { name: "Unity", icon: "unity.png", glow: "from-cyan-400 to-emerald-300" },
     { name: "C# Programming", icon: "csharp.png", glow: "from-indigo-400 to-sky-400" },
     { name: "Gameplay Systems", icon: "gameplay.png", glow: "from-fuchsia-400 to-pink-300" },
-    { name: "Optimization & Profiling", icon: "optimization.png", glow: "from-orange-400 to-amber-300" },
+    { name: "QA & Optimization", icon: "optimization.png", glow: "from-orange-400 to-amber-300" },
     { name: "AI & Logic Design", icon: "ai.jpg", glow: "from-lime-400 to-emerald-300" },
+    // { name: "QA Testing", icon: "qa.jpg", glow: "from-red-400 to-pink-400" },
   ];
 
   const webSkills = [
