@@ -50,7 +50,7 @@ const PROJECTS = [
     cover: "wayofthedragon.png",
     href: "https://way-of-the-dragon.web.app/",
     description:
-      "Martial arts course platform with secure auth, payments, and instructor flows. Emphasis on responsiveness and clean UX across the stack.",
+      "Sample martial arts course platform with secure auth, payments, and instructor flows. Emphasis on responsiveness and clean UX across the stack. Made as a side-project intending to showcase my abilities as a Full-Stack Developer.",
     tech: ["React", "Node", "Express", "MongoDB", "Stripe", "Firebase"],
   },
 ];
