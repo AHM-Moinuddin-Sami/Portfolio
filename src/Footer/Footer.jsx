@@ -1,4 +1,5 @@
 import { withBase } from "../Hooks/withBase";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -75,12 +76,15 @@ const Footer = () => {
             A.H.M. Moin Uddin Sami
           </span>
         </p>
-        <a
-          href="#contact"
-          className="rounded-md border border-white/20 px-3 py-1 text-white/70 hover:text-white hover:border-cyan-300 transition"
+        <Link
+          to="contact"
+          smooth={true}
+          offset={-100}
+          duration={200}
+          className="cursor-pointer rounded-md border border-white/20 px-3 py-1 text-white/70 hover:text-white hover:border-cyan-300 transition"
         >
           Contact Me
-        </a>
+        </Link>
       </div>
     </footer>
   );
