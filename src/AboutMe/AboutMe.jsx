@@ -3,6 +3,8 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { withBase } from "../Hooks/withBase";
+import { Link } from "react-router-dom";
+import SmoothAnchor from "../Components/SmoothAnchor";
 
 const AboutMe = () => {
   useEffect(() => {
@@ -38,7 +40,7 @@ const AboutMe = () => {
               >
                 {/* GitHub icon */}
                 <svg viewBox="0 0 24 24" className="h-6 w-6 fill-white/90">
-                  <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2c-3.22.7-3.9-1.39-3.9-1.39-.53-1.33-1.3-1.69-1.3-1.69-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.21 1.78 1.21 1.04 1.78 2.72 1.26 3.38.96.1-.76.4-1.26.73-1.55-2.57-.29-5.28-1.28-5.28-5.71 0-1.26.45-2.28 1.2-3.08-.12-.29-.52-1.47.11-3.07 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.6.23 2.78.11 3.07.75.8 1.2 1.82 1.2 3.08 0 4.44-2.71 5.41-5.3 5.7.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/>
+                  <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2c-3.22.7-3.9-1.39-3.9-1.39-.53-1.33-1.3-1.69-1.3-1.69-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.21 1.78 1.21 1.04 1.78 2.72 1.26 3.38.96.1-.76.4-1.26.73-1.55-2.57-.29-5.28-1.28-5.28-5.71 0-1.26.45-2.28 1.2-3.08-.12-.29-.52-1.47.11-3.07 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.6.23 2.78.11 3.07.75.8 1.2 1.82 1.2 3.08 0 4.44-2.71 5.41-5.3 5.7.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z" />
                 </svg>
               </a>
 
@@ -52,7 +54,7 @@ const AboutMe = () => {
               >
                 {/* LinkedIn icon */}
                 <svg viewBox="0 0 24 24" className="h-6 w-6 fill-white/90">
-                  <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5Zm.02 5.5H2V22h3V9ZM22 13.5c0-4.02-2.15-5.9-5.01-5.9-2.31 0-3.35 1.27-3.93 2.16V9H9v13h3.99v-7.13c0-1.87.35-3.68 2.67-3.68 2.29 0 2.33 2.14 2.33 3.8V22H22Z"/>
+                  <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5Zm.02 5.5H2V22h3V9ZM22 13.5c0-4.02-2.15-5.9-5.01-5.9-2.31 0-3.35 1.27-3.93 2.16V9H9v13h3.99v-7.13c0-1.87.35-3.68 2.67-3.68 2.29 0 2.33 2.14 2.33 3.8V22H22Z" />
                 </svg>
               </a>
 
@@ -64,7 +66,7 @@ const AboutMe = () => {
               >
                 {/* Mail icon */}
                 <svg viewBox="0 0 24 24" className="h-6 w-6 fill-white/90">
-                  <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v.35l-10 6.25L2 6.35V6Zm0 2.73V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.73l-9.37 5.86a2 2 0 0 1-2.26 0L2 8.73Z"/>
+                  <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v.35l-10 6.25L2 6.35V6Zm0 2.73V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.73l-9.37 5.86a2 2 0 0 1-2.26 0L2 8.73Z" />
                 </svg>
               </a>
             </nav>
@@ -78,12 +80,12 @@ const AboutMe = () => {
               >
                 Download Resume
               </a>
-              <a
+              <SmoothAnchor
                 href="#contact"
                 className="inline-flex items-center justify-center rounded-lg border border-white/20 px-5 py-2 font-semibold text-white transition hover:bg-white/10"
               >
                 Contact
-              </a>
+              </SmoothAnchor>
             </div>
           </aside>
 
@@ -106,7 +108,7 @@ const AboutMe = () => {
                 <p className="mt-1 text-white/80">
                   3D time manipulation puzzle game. I owned terminal interactions and optimization and contributed to
                   bug fixing and QA testing.{" "}
-                  <a href="[insert Seconds to Spare itch link]" className="text-cyan-300 underline underline-offset-2">
+                  <a href="https://xelaronnoc.itch.io/seconds-to-spare" className="text-cyan-300 underline underline-offset-2">
                     View project
                   </a>
                 </p>
@@ -118,7 +120,7 @@ const AboutMe = () => {
                 </h4>
                 <p className="mt-1 text-white/80">
                   Solo game jam project centered on precision parry timing and clear feedback.{" "}
-                  <a href="[insert Parry Hero itch link]" className="text-cyan-300 underline underline-offset-2">
+                  <a href="https://moin-uddin-sami.itch.io/parryhero" className="text-cyan-300 underline underline-offset-2">
                     View project
                   </a>
                 </p>
@@ -129,7 +131,7 @@ const AboutMe = () => {
                 <p className="mt-1 text-white/80">
                   Procedural roguelike CRPG in active development. I lead development, focusing on encounter flow and
                   systemic progression.{" "}
-                  <a href="[insert Path of the Damned itch or devlog link]" className="text-cyan-300 underline underline-offset-2">
+                  <a href="https://moin-uddin-sami.itch.io/path-of-the-damned-showcase" className="text-cyan-300 underline underline-offset-2">
                     View project
                   </a>
                 </p>
@@ -157,12 +159,12 @@ const AboutMe = () => {
 
             {/* CTA */}
             <div className="mt-10">
-              <a
+              <SmoothAnchor
                 href="#contact"
                 className="inline-flex items-center rounded-lg bg-gradient-to-r from-cyan-400 to-emerald-300 px-6 py-3 font-semibold text-gray-900 transition hover:from-cyan-300 hover:to-emerald-200"
               >
                 Let’s build something great
-              </a>
+              </SmoothAnchor>
             </div>
           </article>
         </div>

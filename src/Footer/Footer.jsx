@@ -1,3 +1,4 @@
+import SmoothAnchor from "../Components/SmoothAnchor";
 import { withBase } from "../Hooks/withBase";
 import { Link } from "react-scroll";
 
@@ -76,15 +77,12 @@ const Footer = () => {
             A.H.M. Moin Uddin Sami
           </span>
         </p>
-        <Link
-          to="contact"
-          smooth={true}
-          offset={-100}
-          duration={200}
+        <SmoothAnchor
+          href="#contact"
           className="cursor-pointer rounded-md border border-white/20 px-3 py-1 text-white/70 hover:text-white hover:border-cyan-300 transition"
         >
           Contact Me
-        </Link>
+        </SmoothAnchor>
       </div>
     </footer>
   );

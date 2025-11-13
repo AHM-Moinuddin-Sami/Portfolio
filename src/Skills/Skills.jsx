@@ -4,6 +4,7 @@ import Marquee from "react-fast-marquee";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { withBase } from "../Hooks/withBase";
+import SmoothAnchor from "../Components/SmoothAnchor";
 
 const Skills = () => {
   useEffect(() => {
@@ -145,12 +146,12 @@ const Skills = () => {
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <a
+          <SmoothAnchor
             href="#projects"
             className="inline-flex items-center rounded-xl bg-gradient-to-r from-cyan-400 to-emerald-300 px-6 py-3 font-semibold text-gray-900 shadow-lg transition hover:from-cyan-300 hover:to-emerald-200"
           >
             See Projects in Action
-          </a>
+          </SmoothAnchor>
         </div>
       </div>
     </section>
